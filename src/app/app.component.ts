@@ -32,5 +32,9 @@ export class AppComponent {
     });
   }
 
+  remove(item: { description: string; done: boolean; }) {
+    this.allItems.splice(this.allItems.indexOf(item), 1);
+  }
+
   
 }
